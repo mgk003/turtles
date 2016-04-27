@@ -1,7 +1,13 @@
-<form ng-submit="signup.onSubmitSignup()" method="post">
+<form name='reg' ng-submit="signup.onSubmitSignup()" method="post">
 ID:<br>
 <input type="text" name="id" ng-model='signup.id'><br>
 PASSWORD:<br>
-<input type="text" name="password" ng-model='signup.password'><br>
+<input type="password" name="password" ng-model='signup.password'><br>
+CONFIRM PASSWORD:<br>
+<input type="password" name="confirmPassword" ng-model='signup.confirmPassword'><br>
+EMAIL:<br>
+<input type="email" name="email" ng-model='signup.email'><br>
+DOB:<br>
+<input type="date" name="date" ng-model='signup.date'><br>
 <input type="submit" value="Sign Up">
 </form>
